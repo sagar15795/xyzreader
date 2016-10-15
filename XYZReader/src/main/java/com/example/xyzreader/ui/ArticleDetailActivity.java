@@ -72,6 +72,7 @@ public class ArticleDetailActivity extends AppCompatActivity
             if (getIntent() != null && getIntent().getData() != null) {
                 mStartId = ItemsContract.Items.getItemId(getIntent().getData());
                 mSelectedItemId = mStartId;
+                mPager.setCurrentItem((int) mSelectedItemId);
             }
         }
     }
